@@ -21,6 +21,11 @@ main{
     justify-content: center;
     min-height: 100vh;
 }
+.dotted-matrix {
+    background-color: #ffffff;
+    background-image: radial-gradient(#DEDEDE 1px, transparent 1px); 
+    background-size: 16px 16px; 
+}
 header{
     display: flex;
     flex-direction: column;
