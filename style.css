@@ -6,6 +6,8 @@
 
 html { 
     scroll-behavior: smooth; 
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 } 
 
 body { 
@@ -47,4 +49,7 @@ a, p, h1 {
     font-weight: 900; 
     font-size: 34px;
     margin: 0; 
+}
+::-webkit-scrollbar {
+    display: none; 
 }
