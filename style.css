@@ -1,8 +1,7 @@
 :root{
-    --hd: #E64949;
-    --1: ;
-    --2: ;
-    --tx: ;
+    --hd: #E64949; 
+    --tx: #ffffff;
+    --ot: #3B4ED9;
 }
 html{
     background: var(--bg);
@@ -12,10 +11,11 @@ html{
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Fredoka', sans-serif;
-    background-color: #ffffff;
+    font-family: 'Modak', display;
+    background-color: var(tx);
     background-image: radial-gradient(#DEDEDE 1px, transparent 1px); 
     background-size: 16px 16px; 
+    padding-top: 80px;
 }
 main{
     display: flex;
@@ -30,7 +30,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 15px 0;
+    padding: 15px 30px;
     z-index: 1000;
     display: flex;
     flex-direction: row;
@@ -39,8 +39,9 @@ header{
     
 }
 a, p, h1{
-    color: #ffffff;
-    -webkit-text-stroke: 0.5px #3B4ED9;
+    color: var(--tx);
+    -webkit-text-stroke: 0.5px var(--ot);
     font-weight: 700;
-    font-size: 24px
+    font-size: 30px
+    margin: 0;
 }
