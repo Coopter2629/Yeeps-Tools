@@ -6,13 +6,15 @@
 
 html { 
     scroll-behavior: smooth; 
+    scrollbar-width: auto;
+    scrollbar-color: var(--hd) #f1f1f1;
 } 
 
 body { 
     margin: 0; 
     padding: 0; 
     font-family: 'Modak', display; 
-    background-color: #ffffff; /* Swapped to pure white so your background dots show up clearly */
+    background-color: #ffffff;
     background-image: radial-gradient(#DEDEDE 1px, transparent 1px); 
     background-size: 16px 16px; 
     padding-top: 80px; 
@@ -33,7 +35,7 @@ header {
     left: 0; 
     width: 100%; 
     padding: 15px 30px; 
-    box-sizing: border-box; /* Added to keep your 100% width from overflowing the screen */
+    box-sizing: border-box;
     z-index: 1000; 
     display: flex; 
     flex-direction: row; 
@@ -45,39 +47,21 @@ a, p, h1 {
     color: var(--tx); 
     -webkit-text-stroke: 0.5px var(--ot); 
     font-weight: 700; 
-    font-size: 30px; /* Fixed: Added the missing semicolon here */
+    font-size: 30px;
     margin: 0; 
 } 
-
-/* 1. Works in Chrome, Edge, Safari, and Opera */ 
 ::-webkit-scrollbar { 
     width: 14px; 
 } 
-
 ::-webkit-scrollbar-track { 
     background: #f1f1f1; 
     border-left: 2px solid #DEDEDE; 
 } 
-
 ::-webkit-scrollbar-thumb { 
     background: var(--hd); 
     border-radius: 10px; 
     border: 3px solid #f1f1f1; 
 } 
-
 ::-webkit-scrollbar-thumb:hover { 
     background: #3B4ED9; 
 } 
-
-/* 2. Works in Firefox */ 
-html { 
-    scrollbar-width: auto; 
-    scrollbar-color: var(--hd) #f1f1f1; 
-}
-
-
-/* 2. Works in Firefox (Firefox has more limited scrollbar styling) */
-html {
-    scrollbar-width: auto;
-    scrollbar-color: var(--hd) #f1f1f1;
-}
