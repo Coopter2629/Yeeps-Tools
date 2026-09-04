@@ -7,7 +7,7 @@
 html { 
     scroll-behavior: smooth; 
     scrollbar-width: auto;
-    scrollbar-color: var(--hd) #f1f1f1;
+    scrollbar-color: var(--hd) var(--ot);
 } 
 
 body { 
@@ -54,13 +54,13 @@ a, p, h1 {
     width: 14px; 
 } 
 ::-webkit-scrollbar-track { 
-    background: #f1f1f1; 
+    background: var(--ot); 
     border-left: 2px solid #DEDEDE; 
 } 
 ::-webkit-scrollbar-thumb { 
     background: var(--hd); 
     border-radius: 10px; 
-    border: 3px solid #f1f1f1; 
+    border: 3px solid var(--ot); 
 } 
 ::-webkit-scrollbar-thumb:hover { 
     background: #3B4ED9; 
