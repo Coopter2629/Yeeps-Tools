@@ -7,7 +7,7 @@
 html { 
     scroll-behavior: smooth; 
     scrollbar-width: auto;
-    scrollbar-color: var(--hd) var(--ot);
+    scrollbar-color: var(--hd) transparent;
 } 
 
 body { 
@@ -51,17 +51,19 @@ a, p, h1 {
     margin: 0; 
 } 
 ::-webkit-scrollbar { 
-    width: 14px; 
+    width: 10px;
 } 
+::-webkit-scrollbar-button{
+    display: none;
+}
 ::-webkit-scrollbar-track { 
-    background: var(--ot); 
-    border-left: 2px solid #DEDEDE; 
+    background: transparent; 
+    border-left: none; 
 } 
 ::-webkit-scrollbar-thumb { 
     background: var(--hd); 
     border-radius: 10px; 
-    border: 3px solid var(--ot); 
 } 
 ::-webkit-scrollbar-thumb:hover { 
-    background: #3B4ED9; 
+    background: #CC5252; 
 } 
