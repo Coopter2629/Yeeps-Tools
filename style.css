@@ -6,8 +6,6 @@
 
 html { 
     scroll-behavior: smooth; 
-    scrollbar-width: auto;
-    scrollbar-color: var(--hd) transparent;
 } 
 
 body { 
@@ -49,21 +47,3 @@ a, p, h1 {
     font-weight: 900; 
     font-size: 34px;
     margin: 0; 
-} 
-::-webkit-scrollbar { 
-    width: 10px;
-} 
-::-webkit-scrollbar-button{
-    display: none;
-}
-::-webkit-scrollbar-track { 
-    background: transparent; 
-    border-left: none; 
-} 
-::-webkit-scrollbar-thumb { 
-    background: var(--hd); 
-    border-radius: 10px; 
-} 
-::-webkit-scrollbar-thumb:hover { 
-    background: #CC5252; 
-} 
