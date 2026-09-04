@@ -1,69 +1,80 @@
-:root{
+:root { 
     --hd: #E64949; 
-    --tx: #ffffff;
-    --ot: #3B4ED9;
-}
-html{
-    background: var(--bg);
-    color: var(--tx);
-    scroll-behavior: smooth;
-}
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Modak', display;
-    background-color: var(tx);
+    --tx: #ffffff; 
+    --ot: #3B4ED9; 
+} 
+
+html { 
+    scroll-behavior: smooth; 
+} 
+
+body { 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Modak', display; 
+    background-color: #ffffff; /* Swapped to pure white so your background dots show up clearly */
     background-image: radial-gradient(#DEDEDE 1px, transparent 1px); 
     background-size: 16px 16px; 
-    padding-top: 80px;
-}
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 150vh;
-}
-header{
-    background: var(--hd);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px 30px;
-    z-index: 1000;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-a, p, h1{
-    color: var(--tx);
-    -webkit-text-stroke: 0.5px var(--ot);
-    font-weight: 700;
-    font-size: 30px
-    margin: 0;
-}
-/* 1. Works in Chrome, Edge, Safari, and Opera */
-::-webkit-scrollbar {
-    width: 14px;               /* Width of the vertical scrollbar */
+    padding-top: 80px; 
+} 
+
+main { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    min-height: 150vh; 
+} 
+
+header { 
+    background: var(--hd); 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    padding: 15px 30px; 
+    box-sizing: border-box; /* Added to keep your 100% width from overflowing the screen */
+    z-index: 1000; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+} 
+
+a, p, h1 { 
+    color: var(--tx); 
+    -webkit-text-stroke: 0.5px var(--ot); 
+    font-weight: 700; 
+    font-size: 30px; /* Fixed: Added the missing semicolon here */
+    margin: 0; 
+} 
+
+/* 1. Works in Chrome, Edge, Safari, and Opera */ 
+::-webkit-scrollbar { 
+    width: 14px; 
+} 
+
+::-webkit-scrollbar-track { 
+    background: #f1f1f1; 
+    border-left: 2px solid #DEDEDE; 
+} 
+
+::-webkit-scrollbar-thumb { 
+    background: var(--hd); 
+    border-radius: 10px; 
+    border: 3px solid #f1f1f1; 
+} 
+
+::-webkit-scrollbar-thumb:hover { 
+    background: #3B4ED9; 
+} 
+
+/* 2. Works in Firefox */ 
+html { 
+    scrollbar-width: auto; 
+    scrollbar-color: var(--hd) #f1f1f1; 
 }
 
-::-webkit-scrollbar-track {
-    background: #f1f1f1;       /* Color of the scroll track area */
-    border-left: 2px solid #DEDEDE; /* Matches your background dot color */
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--hd);     /* Uses your red header color for the handle */
-    border-radius: 10px;       /* Makes the handle perfectly round and puffy */
-    border: 3px solid #f1f1f1; /* Creates a padding effect around the handle */
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #3B4ED9;       /* Turns blue on hover to match your text outline! */
-}
 
 /* 2. Works in Firefox (Firefox has more limited scrollbar styling) */
 html {
