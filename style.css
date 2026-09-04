@@ -45,3 +45,28 @@ a, p, h1{
     font-size: 30px
     margin: 0;
 }
+/* 1. Works in Chrome, Edge, Safari, and Opera */
+::-webkit-scrollbar {
+    width: 14px;               /* Width of the vertical scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;       /* Color of the scroll track area */
+    border-left: 2px solid #DEDEDE; /* Matches your background dot color */
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--hd);     /* Uses your red header color for the handle */
+    border-radius: 10px;       /* Makes the handle perfectly round and puffy */
+    border: 3px solid #f1f1f1; /* Creates a padding effect around the handle */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3B4ED9;       /* Turns blue on hover to match your text outline! */
+}
+
+/* 2. Works in Firefox (Firefox has more limited scrollbar styling) */
+html {
+    scrollbar-width: auto;
+    scrollbar-color: var(--hd) #f1f1f1;
+}
