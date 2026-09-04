@@ -45,7 +45,7 @@ header {
 
 a, p, h1 { 
     color: var(--tx); 
-    -webkit-text-stroke: 0.5px var(--ot); 
+    -webkit-text-stroke: 1px var(--ot); 
     font-weight: 700; 
     font-size: 30px;
     margin: 0; 
