@@ -50,6 +50,7 @@ a, p, h1 {
     font-weight: 999; 
     font-size: 34px;
     margin: 0; 
+    text-decoration: none;
 }
 ::-webkit-scrollbar {
     display: none; 
@@ -61,4 +62,5 @@ a, p, h1 {
     font-weight: 999; 
     font-size: 45px;
     margin: 0; 
+    text-decoration: none;
 }
