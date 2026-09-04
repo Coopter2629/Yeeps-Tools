@@ -13,6 +13,9 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Courier', sans-serif;
+    background-color: #ffffff;
+    background-image: radial-gradient(#DEDEDE 1px, transparent 1px); 
+    background-size: 16px 16px; 
 }
 main{
     display: flex;
@@ -20,11 +23,6 @@ main{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-}
-.dotted-matrix {
-    background-color: #ffffff;
-    background-image: radial-gradient(#DEDEDE 1px, transparent 1px); 
-    background-size: 16px 16px; 
 }
 header{
     background: var(--hd)
