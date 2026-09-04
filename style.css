@@ -44,8 +44,9 @@ header {
 } 
 
 a, p, h1 { 
+    font-family: 'Lilita One', sans-serif;
     color: var(--tx); 
-    -webkit-text-stroke: 2.5px var(--ot); 
+    -webkit-text-stroke: 1.2px var(--ot); 
     font-weight: 900; 
     font-size: 34px;
     margin: 0; 
