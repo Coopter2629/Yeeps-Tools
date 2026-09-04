@@ -54,3 +54,11 @@ a, p, h1 {
 ::-webkit-scrollbar {
     display: none; 
 }
+.j{
+    font-family: 'Lilita One', sans-serif;
+    color: var(--tx); 
+    -webkit-text-stroke: 1.2px var(--ot); 
+    font-weight: 999; 
+    font-size: 45px;
+    margin: 0; 
+}
