@@ -12,7 +12,7 @@ html{
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Courier', sans-serif;
+    font-family: 'Fredoka', sans-serif;
     background-color: #ffffff;
     background-image: radial-gradient(#DEDEDE 1px, transparent 1px); 
     background-size: 16px 16px; 
@@ -32,9 +32,15 @@ header{
     width: 100%;
     padding: 15px 0;
     z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 a, p, h1{
     color: #ffffff;
     -webkit-text-stroke: 0.5px #3B4ED9;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 24px
 }
