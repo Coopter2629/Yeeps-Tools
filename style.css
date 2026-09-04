@@ -1,7 +1,7 @@
 :root { 
     --hd: #E64949; 
     --tx: #ffffff; 
-    --ot: #3B4ED9; 
+    --ot: #28284F; 
 } 
 
 html { 
@@ -58,7 +58,7 @@ a, p, h1 {
 .j{
     font-family: 'Lilita One', sans-serif;
     color: var(--tx); 
-    -webkit-text-stroke: 1.2px var(--ot); 
+    -webkit-text-stroke: 0.7px var(--ot); 
     font-weight: 999; 
     font-size: 45px;
     margin: 0; 
