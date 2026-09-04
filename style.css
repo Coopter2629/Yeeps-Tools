@@ -13,7 +13,7 @@ html {
 body { 
     margin: 0; 
     padding: 0; 
-    font-family: 'Londrina Solid', sans-serif;
+    font-family: 'Lilita One', sans-serif;
     background-color: #ffffff;
     background-image: radial-gradient(#DEDEDE 1px, transparent 1px); 
     background-size: 16px 16px; 
@@ -45,7 +45,7 @@ header {
 
 a, p, h1 { 
     color: var(--tx); 
-    -webkit-text-stroke: 1px var(--ot); 
+    -webkit-text-stroke: 2.5px var(--ot); 
     font-weight: 900; 
     font-size: 34px;
     margin: 0; 
