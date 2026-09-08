@@ -64,3 +64,14 @@ a, p, h1 {
     margin: 0; 
     text-decoration: none;
 }
+.log{
+    font-family: 'Litita One', sans-serif;
+    color: var(--tx);
+    font-size: 34px;
+    margin: 0;
+    font-weight: 999;
+    padding: 12px 12px;
+    text-decoration: none;
+    -webkit-text-stroke: 1.2px var(--ot);
+    background: #ffffff;
+}
