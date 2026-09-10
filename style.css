@@ -65,7 +65,7 @@ a, p, h1 {
     text-decoration: none;
 }
 .log{
-    font-family: 'Litita One', sans-serif;
+    font-family: 'Londrina Solid', sans-serif;
     color: var(--hd);
     font-size: 34px;
     margin: 0;
@@ -76,5 +76,4 @@ a, p, h1 {
     background: #ffffff;
     border-radius: 22px;
     outline: 1px solid #333369;
-    outline-offset: -15px;
 }
