@@ -25,7 +25,7 @@ main {
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
-    min-height: 150vh; 
+    min-height: calc(150vh - 80px); 
 } 
 
 header { 
@@ -52,10 +52,12 @@ a, p, h1 {
     margin: 0; 
     text-decoration: none;
 }
+
 ::-webkit-scrollbar {
     display: none; 
 }
-.j{
+
+.j {
     font-family: 'Lilita One', sans-serif;
     color: var(--tx); 
     -webkit-text-stroke: 0.7px var(--ot); 
@@ -64,16 +66,58 @@ a, p, h1 {
     margin: 0; 
     text-decoration: none;
 }
-.log{
+
+.log {
     font-family: 'Londrina Solid', sans-serif;
     color: var(--hd);
     font-size: 34px;
     margin: 0;
-    font-weight: 20;
-    padding: 8px 8px;
+    font-weight: 400;
+    padding: 8px 12px;
     text-decoration: none;
     -webkit-text-stroke: 1.2px var(--ot);
     background: #ffffff;
     border-radius: 22px;
     outline: 1px solid #333369;
+}
+
+/* New Form Styling to Match Theme */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#my-box {
+    font-family: 'Londrina Solid', sans-serif;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 16px;
+    border: 2px solid var(--ot);
+    outline: none;
+    resize: vertical;
+    background-color: #fff;
+    color: #333369;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+#save-btn {
+    font-family: 'Londrina Solid', sans-serif;
+    background: var(--hd);
+    color: var(--tx);
+    font-size: 28px;
+    font-weight: 999;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 22px;
+    outline: 1.2px solid var(--ot);
+    cursor: pointer;
+    -webkit-text-stroke: 1px var(--ot);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.1s ease;
+}
+
+#save-btn:active {
+    transform: scale(0.96);
 }
