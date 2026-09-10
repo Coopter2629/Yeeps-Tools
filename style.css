@@ -66,13 +66,15 @@ a, p, h1 {
 }
 .log{
     font-family: 'Litita One', sans-serif;
-    color: var(--tx);
+    color: var(--hd);
     font-size: 34px;
     margin: 0;
     font-weight: 999;
-    padding: 12px 12px;
+    padding: 8px 8px;
     text-decoration: none;
     -webkit-text-stroke: 1.2px var(--ot);
     background: #ffffff;
-    border-radius: 30px;
+    border-radius: 22px;
+    outline: 1px solid #333369;
+    outline-offset: -15px;
 }
